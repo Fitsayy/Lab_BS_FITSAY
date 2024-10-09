@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контактна форма</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-color: #e9ecef;
+            font-family: 'Arial', sans-serif;
+        }
+        .contact-form-container {
+            background: linear-gradient(135deg, #f8f9fa, #ffffff);
+            padding: 30px;
+            border-radius: 1.5rem;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .contact-form-container:hover {
+            transform: translateY(-5px);
+        }
+        .input-group-text {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 1rem 0 0 1rem;
+        }
+        .form-control {
+            border-radius: 0 1rem 1rem 0;
+            border: 1px solid #007bff;
+        }
+        .form-control:focus {
+            border-color: #0056b3;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+        }
+        .btn {
+            border-radius: 1rem;
+            background-color: #007bff;
+            border: none;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+<div class="container mt-5 contact-form-container">
+    <h2 class="text-center">Контактна форма</h2>
+    <hr>
+    <h3 class="text-center">Відправити по електронній пошті. Всі поля позначені зірочкою (*) обов'язкові для заповнення.</h3>
+    <hr>
+    <form>
+        <div class="mb-3 input-group">
+            <label for="name" class="input-group-text">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                    <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+                </svg>
+            </label>
+            <input type="text" placeholder="Ім'я*" class="form-control form-control-sm" id="name" required>
+        </div>
+        <div class="mb-3 input-group">
+            <label for="email" class="input-group-text">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+                </svg>
+            </label>
+            <input type="email" class="form-control form-control-sm" id="email" placeholder="Електронна адреса*" aria-describedby="emailHelp" required>
+        </div>
+        <div class="mb-3 input-group">
+            <label for="subject" class="input-group-text">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-text" viewBox="0 0 16 16">
+                    <path d="M6 1a1 1 0 0 0-1 1v3H2a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V5.414L10.586 1H6zM3 4h6v2H3V4zm0 3h6v2H3V7zm0 3h6v2H3v-2z"/>
+                </svg>
+            </label>
+            <input type="text" class="form-control form-control-sm" id="subject" placeholder="Тема*" required>
+        </div>
+        <div class="mb-3 input-group">
+            <label for="message" class="input-group-text">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-dots" viewBox="0 0 16 16">
+                    <path d="M2 2.5A.5.5 0 0 1 2.5 2h11a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-.5.5H2.5a.5.5 0 0 1-.5-.5v-11zM4 5a1 1 0 1 0 2 0 1 1 0 0 0-2 0zm4 0a1 1 0 1 0 2 0 1 1 0 0 0-2 0zm4 0a1 1 0 1 0 2 0 1 1 0 0 0-2 0z"/>
+                </svg>
+            </label>
+            <textarea class="form-control form-control-sm" rows="2" id="message" placeholder="Повідомлення*" required></textarea>
+        </div>
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="copyCheckbox">
+            <label class="form-check-label" for="copyCheckbox">Надіслати копію собі</label>
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Надіслати електронний лист</button>
+    </form>
+    <br>
+</div>
+</body>
+</html>
