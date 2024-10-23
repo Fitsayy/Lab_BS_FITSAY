@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .container {
+            max-width: 500px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        legend {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #198754;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .form-check {
+            margin-bottom: 15px;
+        }
+        .form-check-label {
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        .form-check-input {
+            cursor: pointer;
+        }
+        /* Підсвітка при наведенні */
+        .form-check:hover {
+            background-color: #e9f5e9;
+            border-radius: 5px;
+        }
+        .form-check-input:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container border m-3 p-4 rounded-3">
+        <legend>Виберіть мови програмування</legend>
+
+        <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" id="pythonSwitch">
+            <label class="form-check-label" for="pythonSwitch">Python</label>
+        </div>
+
+        <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" id="javaSwitch" checked>
+            <label class="form-check-label" for="javaSwitch">Java</label>
+        </div>
+
+        <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" id="javascriptSwitch">
+            <label class="form-check-label" for="javascriptSwitch">JavaScript</label>
+        </div>
+
+        <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" id="pascalSwitch">
+            <label class="form-check-label" for="pascalSwitch">Pascal</label>
+        </div>
+
+        <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" id="kotlinSwitch">
+            <label class="form-check-label" for="kotlinSwitch">Kotlin</label>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXlYQb13dGkA9i/tQ8XonMjLkB7/2kzJbBmiiC9Dg9WtT1DA6lxHZVcNoP0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWIY2yRnS4WXy1rtiO/Krka2n5lZDI5WkQW1jkTZaPpL6PAGqpucPaXgKS"></script>
+</body>
+</html>
