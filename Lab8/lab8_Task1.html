@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Чаї та спеції</title>
+    <link rel="stylesheet" href="style.css"> <!-- Додайте свій файл CSS тут, якщо потрібно -->
+    <style>
+        body {
+            -webkit-text-size-adjust: 100%;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+            color: #333;
+            line-height: 24px;
+            font-family: 'Myriad Pro', sans-serif;
+            font-size: 16px;
+            box-sizing: border-box;
+            background-color: #fefbd8; /* Світло-жовтий фон */
+            padding: 20px; /* Відступи всередині body */
+        }
+        h1 {
+            margin-bottom: 20px; /* Відступ між заголовком і контейнерами */
+            text-align: left; /* Вирівнює заголовок зліва */
+        }
+        .tea-container, .spice-container {
+            display: flex; /* Використовуємо flex для горизонтального розташування */
+            justify-content: flex-start; /* Вирівнює блоки зліва */
+            flex-wrap: nowrap; /* Не дозволяє переносити елементи на новий рядок */
+            overflow-x: auto; /* Додає прокрутку, якщо елементи виходять за межі */
+        }
+        .tea-item, .spice-item {
+            width: 22%; /* Ширина для чаю та спецій */
+            padding: 20px;
+            margin: 10px; /* Додає відстань між блоками */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Додає легку тінь */
+            border-radius: 8px; /* Закруглення країв */
+            text-align: center; /* Центрує текст */
+            background-color: #fff; /* Білий фон для контейнерів */
+        }
+        img {
+            max-width: 100%; /* Зберігає пропорції зображення */
+            height: auto; /* Автоматична висота */
+            border-radius: 5px; /* Закруглення країв зображення */
+        }
+    </style>
+</head>
+<body>
+    <h1>ЧАЇ</h1>
+    <div class="tea-container">
+        <div class="tea-item">
+            <div><img src="c:/Users/user/Downloads/tea1.jpg" alt="Ранковий чай"></div>
+            <h3>Ранок срібносяйний</h3>
+            <span style="color: #800000;"><em>ранковий чай</em></span>
+            <div><strong><em>Склад: </em></strong>меліса*, м'ята*, аніс*, фенхель*</div>
+            <div>+ вірш Оксани Сокіл</div>
+            <div><strong><em>Маса:</em></strong> 30г.</div>
+            <div><strong><em>Ціна:</em></strong> 79,00 грн.</div>
+            <div>
+                <label for="tea1">Кількість, шт.</label>
+                <input max="9999" min="0" name="tea1" type="number" id="tea1">
+            </div>
+            <div><strong><em>Статус:</em></strong> є у наявності</div>
+        </div>
+
+        <div class="tea-item">
+            <div><img src="c:/Users/user/Downloads/tea2.jpg" alt="Вечір золотий"></div>
+            <h3>Вечір золотий</h3>
+            <span style="color: #800000;"><em>вечерній чай</em></span>
+            <div><strong><em>Склад: </em></strong>меліса*, маренка запашна*, м'ята*, ромашка*, первоцвіт*, волошка*, троянда*, мальва*</div>
+            <div>+ вірш Ліни Костенко</div>
+            <div><strong><em>Маса:</em></strong> 30г.</div>
+            <div><strong><em>Ціна:</em></strong>&nbsp;80,00 грн.</div>
+            <div>
+                <label for="tea2">Кількість, шт.</label>
+                <input max="9999" min="0" name="tea2" type="number" id="tea2">
+            </div>
+            <div><strong><em>Статус:</em></strong> є у наявності</div>
+        </div>
+
+        <div class="tea-item">
+            <div><img src="c:/Users/user/Downloads/tea3 (1).jpg" alt="Квітка"></div>
+            <h3>Квітка</h3>
+            <span style="color: #800000;"><em>чай для насолоди</em></span>
+            <div><strong><em>Склад:&nbsp;</em></strong>трава лимонна, липа*, каркаде, календула*, первоцвіт*, вербена*, котовник*, листя смородини*, бузина*, соняшник*, волошка*, мальва*, троянда*</div>
+            <div>+ вірш Богдана Ігоря Антоновича</div>
+            <div><strong><em>Маса:</em></strong> 45г.</div>
+            <div><strong><em>Ціна:</em></strong>&nbsp;87,00 грн.</div>
+            <div>
+                <label for="tea3">Кількість, шт.</label>
+                <input max="9999" min="0" name="tea3" type="number" id="tea3">
+            </div>
+            <div><strong><em>Статус:</em></strong> є у наявності</div>
+        </div>
+
+        <div class="tea-item">
+            <div><img src="c:/Users/user/Downloads/tea4 (1).jpg" alt="Зимові візерунки"></div>
+            <h3>Зимові візерунки</h3>
+            <em style="color: #800000;">зимовий чай</em>
+            <div><strong><em>Склад:&nbsp;</em></strong>бузина*, липа*, первоцвіт*, мальва*, базилік лимонний*, бруньки модрини*, чебрець*, звіробій*, шавлія*, мати й мачуха*</div>
+            <div>+ вірш Світлани Даньків</div>
+            <div><strong><em>Маса:</em></strong> 42г.</div>
+            <div><strong><em>Ціна:</em></strong>&nbsp;87,00 грн.</div>
+            <div>
+                <label for="tea4">Кількість, шт.</label>
+                <input max="9999" min="0" name="tea4" type="number" id="tea4">
+            </div>
+            <div><strong><em>Статус:</em></strong> є у наявності</div>
+        </div>
+    </div>
+
+    <h1>СПЕЦІЇ</h1>
+    <div class="spice-container">
+        <div class="spice-item">
+            <div><img src="c:\Users\user\Downloads\sp1.jpg" alt="Сіль з травами"></div>
+            <h3><span style="font-size: 14pt;"><strong>Сіль з травами, баночка*</strong></span></h3>
+            <div><strong><em>Склад: </em></strong>базилік, кріп, шнітт, помідори, цибуля, петрушка, морква, календула, волошки, кропива, любисток</div>
+            <div><strong><em>Маса:</em></strong> 90г.</div>
+            <div><strong><em>Ціна:</em></strong> 84,00 грн.</div>
+            <div>
+                <label for="sp1">Кількість, шт.</label>
+                <input max="9999" min="0" name="sp1" type="number" id="sp1">
+            </div>
+            <div><strong><em>Статус:</em></strong> є у наявності</div>
+        </div>
+
+        <div class="spice-item">
+            <div><img src="c:\Users\user\Downloads\sp2.jpg" alt="Сіль з травами, пакет"></div>
+            <h3><span style="font-size: 14pt;"><strong>Сіль з травами, пакет*</strong></span></h3>
+            <div><strong><em>Склад: </em></strong> базилік, кріп, шнітт, помідори, цибуля, петрушка, морква, календула, волошки, кропива, любисток</div>
+            <div><strong><em>Маса:</em></strong> 90г.</div>
+            <div><strong><em>Ціна:</em></strong> 47,00 грн.</div>
+            <div>
+                <label for="sp2">Кількість, шт.</label>
+                <input max="9999" min="0" name="sp2" type="number" id="sp2">
+            </div>
+            <div><strong><em>Статус:</em></strong> є у наявності</div>
+        </div>
+
+        <div class="spice-item">
+            <div><img src="c:\Users\user\Downloads\sp3.jpg" alt="Сіль з травами, великий пакет"></div>
+            <h3><span style="font-size: 14pt;"><strong>Сіль з травами, великий пакет*</strong></span></h3>
+            <div><strong><em>Склад: </em></strong>базилік, кріп, шнітт, помідори, цибуля, петрушка, морква, календула, волошки, кропива, любисток</div>
+            <div><strong><em>Маса:</em></strong> 300г.</div>
+            <div><strong><em>Ціна:</em></strong> 132,00 грн.</div>
+            <div>
+                <label for="sp3">Кількість, шт.</label>
+                <input max="9999" min="0" name="sp3" type="number" id="sp3">
+            </div>
+            <div><strong><em>Статус:</em></strong> є у наявності</div>
+        </div>
+
+        <div class="spice-item">
+            <div><img src="c:\Users\user\Downloads\sp4.jpg" alt="Трави салатні, баночка"></div>
+            <h3><span style="font-size: 14pt;"><strong>Трави салатні, баночка*</strong></span></h3>
+            <div><strong><em>Склад: </em></strong>базилік, кріп, шнітт, помідори, цибуля, петрушка, морква, календула, волошки, кропива, любисток</div>
+            <div><strong><em>Маса:</em></strong> 15г.</div>
+            <div><strong><em>Ціна:</em></strong> 84,00 грн.</div>
+            <div>
+                <label for="sp4">Кількість, шт.</label>
+                <input max="9999" min="0" name="sp4" type="number" id="sp4">
+            </div>
+            <div><strong><em>Статус:</em></strong> є у наявності</div>
+        </div>
+    </div>
+</body>
+</html>
