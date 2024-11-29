@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Cars</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(to bottom, #e3f2fd, #ffffff);
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            text-align: center;
+            padding: 30px 0;
+            background: #444444; 
+            color: #fff;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+            font-weight: 700;
+        }
+        header p {
+            margin: 10px 0 0;
+            font-size: 1.2rem;
+        }
+        .carousel-container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .carousel-item img {
+            border-radius: 20px;
+            height: 500px;
+            object-fit: cover;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+        }
+        .carousel-caption {
+            background: rgba(0, 0, 0, 0.6); /* Темний прозорий фон */
+            border-radius: 15px;
+            padding: 15px 25px;
+            font-size: 1rem;
+            text-align: left;
+        }
+        .carousel-caption h5 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        footer {
+            background: #000000;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 50px;
+        }
+        footer p {
+            margin: 0;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cars Slider</h1>
+    </header>
+
+    <div class="carousel-container">
+        <div id="carouselExample" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="3"></button>
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="4"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://images.wallpaperscraft.ru/image/single/bmw_320i_bmw_mashina_176040_1920x1080.jpg" class="d-block w-100" alt="Фото 1">
+                    <div class="carousel-caption">
+                        <h5>bmw 320i</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.wallpaperscraft.ru/image/single/nissan_350z_nissan_sportkar_179878_1920x1080.jpg" class="d-block w-100" alt="Фото 2">
+                    <div class="carousel-caption">
+                        <h5>nissan 350z</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.wallpaperscraft.ru/image/single/bmw_m2_bmw_avtomobil_317132_1920x1080.jpg" class="d-block w-100" alt="Фото 3">
+                    <div class="carousel-caption">
+                        <h5>bmw m2</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.wallpaperscraft.ru/image/single/lamborghini_urus_lamborghini_avtomobil_210824_1920x1080.jpg" class="d-block w-100" alt="Фото 4">
+                    <div class="carousel-caption">
+                        <h5>lamborghini urus</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.wallpaperscraft.ru/image/single/nissan_skyline_gtr_nissan_chernyj_1006439_1920x1080.jpg" class="d-block w-100" alt="Фото 5">
+                    <div class="carousel-caption">
+                        <h5>nissan skyline gt-r</h5>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Попередній</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Наступний</span>
+            </button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

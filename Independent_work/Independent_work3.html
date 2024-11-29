@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контактна форма</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .contact-form {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            width: 400px;
+            animation: fadeIn 0.8s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .contact-form h2 {
+            margin-bottom: 20px;
+            color: #444;
+            font-size: 24px;
+            text-align: center;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 500;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+            transition: border-color 0.3s ease;
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            border-color: #6a11cb;
+            outline: none;
+            box-shadow: 0 0 5px rgba(106, 17, 203, 0.4);
+        }
+
+        .contact-form button {
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 500;
+            text-transform: uppercase;
+            transition: background 0.3s ease, transform 0.2s ease;
+            width: 100%;
+        }
+
+        .contact-form button:hover {
+            background: linear-gradient(to right, #2575fc, #6a11cb);
+            transform: scale(1.05);
+        }
+
+        /* Toast styling */
+        .toast {
+            visibility: hidden;
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #4caf50;
+            color: white;
+            text-align: left;
+            border-radius: 10px;
+            padding: 15px 20px;
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+            font-size: 16px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+            transition: visibility 0s, opacity 0.5s ease-in-out;
+            opacity: 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .toast.show {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .toast-icon {
+            font-size: 24px;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateX(-50%) translateY(20px);
+            }
+            to {
+                transform: translateX(-50%) translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="contact-form">
+        <h2>Контактна форма</h2>
+        <label for="name">Ім'я*</label>
+        <input type="text" id="name" placeholder="Введіть ваше ім'я">
+        <label for="email">Електронна адреса*</label>
+        <input type="email" id="email" placeholder="Введіть вашу електронну адресу">
+        <label for="subject">Тема*</label>
+        <input type="text" id="subject" placeholder="Введіть тему">
+        <label for="message">Повідомлення*</label>
+        <textarea id="message" rows="4" placeholder="Введіть ваше повідомлення"></textarea>
+        <button id="sendButton">Надіслати</button>
+    </div>
+    <div id="toast" class="toast">
+        <span class="toast-icon">✅</span>
+        <span>Ваше повідомлення успішно надіслано!</span>
+    </div>
+
+    <script>
+        document.getElementById('sendButton').addEventListener('click', function() {
+            const toast = document.getElementById('toast');
+            toast.className = 'toast show';
+            setTimeout(() => {
+                toast.className = toast.className.replace('show', '');
+            }, 3000);
+        });
+    </script>
+</body>
+</html>
